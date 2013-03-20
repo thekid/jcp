@@ -1,0 +1,26 @@
+#!/bin/sh
+
+JCP=""
+SEP=";"
+EXE=javac
+while read line || [ -n "$line" ] ; do
+  case $line in
+    '#'*)
+      ;;
+    '!'*)
+      JCP=$SEP${line#"!"}$JCP
+      ;;
+    *) 
+      JCP=$JCP$SEP$line
+      ;;
+  esac
+done < class.jcp
+JCP=${JCP#$SEP}
+
+echo "CP: $JCP"
+if [ "" = "$JAVA_HOME" ] ; then
+  EXE=$(which -a $EXE | grep -v "$0" | head -1)
+else 
+  EXE=$JAVA_HOME/$EXE
+fi
+$EXE -cp "$JCP" "$@"
