@@ -13,7 +13,8 @@ lib/org-json-b883a848a6.jar
 lib/commons-cli-1.2.jar
 ```
 
-Lines beginning with `#` are comments. Empty lines are ignored.
+Lines beginning with `#` are comments. Empty lines are ignored. Lines with a `!` in 
+front are prepended instead of added to the end of the class path.
 
 Installation
 ------------
