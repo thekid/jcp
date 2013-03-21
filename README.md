@@ -1,6 +1,6 @@
 jcp
 ===
-Tired of compiling class paths manually (even using `-cp lib/*.jar`)? 
+Tired of compiling class paths manually (even using `-cp lib/*`)? 
 Here are **J**ava **C**lass **P**ath files...
 
 Usage
