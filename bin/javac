@@ -21,6 +21,6 @@ echo "CP: $JCP"
 if [ "" = "$JAVA_HOME" ] ; then
   EXE=$(which -a $EXE | grep -v "$0" | head -1)
 else 
-  EXE=$JAVA_HOME/$EXE
+  EXE=$JAVA_HOME/bin/$EXE
 fi
 $EXE -cp "$JCP" "$@"
