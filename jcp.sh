@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ -d /cygdrive ] ; then
+if [[ "$OS" =~ Windows ]] ; then
   SEP=";"
 else
   SEP=":"
