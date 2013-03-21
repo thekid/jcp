@@ -28,4 +28,4 @@ Include the JCP shell script in your `.bashrc`:
 
 If you don't have the Java binaries in your path, you can set the 
 `JAVA_HOME` environment variable to the JDK/JRE installation dir, 
-e.g. `/path/to/Java/jdk1.6.0_10/`.
+e.g. `/path/to/Java/jdk-7u17-windows-i586/`.
