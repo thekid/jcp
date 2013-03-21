@@ -44,10 +44,14 @@ jcp() {
   fi
 }
 
-java() { 
-  EXE=java _jdk "$@" 
+java() {
+  EXE=java _jdk "$@"
 }
 
-javac() { 
-  EXE=javac _jdk "$@" 
+jar() {
+  EXE=jar _jdk "$@"
+}
+
+javac() {
+  EXE=javac _jdk "$@"
 }
